@@ -1,4 +1,124 @@
 body {
   background: #EBF0F5;
+  color: #a7f8b0;
   margin: 0;
+}
+
+.header {
+  height: 550px;
+  width: 980px;
+  background-color: #3f9146;
+  margin: 0 auto;
+}
+
+.main-wrap {
+  height: 500px;
+  width: 980px;
+  margin: 0 auto;
+}
+.main-wrap .main {
+  height: 500px;
+  width: 660px;
+  padding-left: 20px;
+  float: left;
+  background-color: #3f9146;
+}
+.main-wrap .sidebar{
+  height: 100%;
+  width: 300px;
+  overflow-y: auto;
+  float: left;
+  background-color: #3f9146;
+}
+
+.footer{
+  height: 25px;
+  width: 980px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.image{
+  height: 550px;
+  width: 980px;
+}
+
+.slick-prev{
+  left: 25px;
+  z-index: 10;
+}
+.slick-prev:before{
+  color: #3f9146 !important;
+}
+
+.slick-next{
+    right: 25px;
+}
+.slick-next::before{
+  color: #3f9146 !important;
+}
+
+dt {
+  float: left;
+  font-weight: bold;
+}
+dd {
+margin-left: 80px;
+}
+h1{
+  z-index: 10;
+  margin: 0;
+  padding: 30px;
+  font-size: 50px;
+  position: absolute;
+}
+
+@media screen and (max-width:750px) {
+  /* 画面サイズが750px以下はここを読み込む */
+  body{
+    font-size: 1.5rem;
+  }
+  .header{
+    height: 180px;
+    width:  100%;
+  }
+  .main-wrap{
+    height: auto;
+    width:  100%;
+  }
+  .main-wrap .main{
+    height: auto;
+    width:  90%;
+    padding: 15px 5% 15px 5%;
+    float: none;
+    text-align: left;
+  }
+  .main-wrap .sidebar{
+    height: 450px;
+    width:  100%;
+    float: none;
+  }
+  .footer{
+    width:  100%;
+    height: 40px;
+  }
+  .image{
+    height: 220px;
+    width: 100%;
+  }
+  h2 {
+    margin-top: none;
+  }
+  d1{
+    margin: none;
+  }
+  h1{
+    z-index: 10;
+    margin: 0;
+    padding: 30px;
+    font-size: 30px;
+    position: absolute;
+  }
 }
